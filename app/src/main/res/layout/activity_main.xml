@@ -18,23 +18,24 @@
         android:id="@+id/pan_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="345dp"
         android:text="PAN"
         android:textColor="@color/white"
-        android:textSize="70sp"
+        android:textSize="60sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/dem_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="345dp"
         android:layout_alignParentEnd="true"
         android:layout_toRightOf="@id/pan_txt"
         android:text="DEM"
         android:textColor="@color/black"
-        android:textSize="70sp"
+        android:textSize="60sp"
         android:textStyle="bold" />
 
 </RelativeLayout>
