@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_margin="15dp"
+    tools:context=".HomeScreen">
+
+    <RelativeLayout
+        android:id="@+id/logo_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo_v2"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/full_logo" />
+
+        <TextView
+            android:id="@+id/pan_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_v2"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="-25dp"
+            android:text="PAN"
+            android:textColor="@color/green_01"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dem_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_v2"
+            android:layout_marginTop="-25dp"
+            android:layout_toRightOf="@id/pan_txt"
+            android:text="DEM"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!-- Categories-->
+    <LinearLayout
+        android:id="@+id/categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_header"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/map_icon_layout"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/cardbg"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/map_icon" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/map_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Map"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/news_icon_layout"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/cardbg2"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/news_icon" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="News"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/stats_icon_layout"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/cardbg3"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/stats_icon" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Stats"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Categories-->
+
+    <TextView
+        android:id="@+id/safety_prec_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categories"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:text="Safety Precautions"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/sanatize"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/safety_prec_txt"-->
+<!--        android:layout_marginTop="-25dp"-->
+<!--        android:src="@drawable/sanatize_card" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/mask"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/sanatize"-->
+<!--        android:layout_marginTop="-10dp"-->
+<!--        android:src="@drawable/mask_card" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/social_dist"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/mask"-->
+<!--        android:layout_marginTop="-20dp"-->
+<!--        android:src="@drawable/distance_card" />-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sanatize_card"
+        android:layout_width="370dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/safety_prec_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/title01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Keep your hands clean"/>
+
+        <TextView
+            android:id="@+id/subtitle01"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="42dp"
+            android:text="Wash your hands often with soap or use an alcohol-based hand rub"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="260dp"
+            android:src="@drawable/sanitizer_pump_bottle" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mask_card"
+        android:layout_width="370dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/sanatize_card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/title02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Always wear a mask"/>
+
+        <TextView
+            android:id="@+id/subtitle02"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="42dp"
+            android:text="Especially indoors when physical distancing is not possible"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="265dp"
+            android:src="@drawable/medical_mask" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/distance_card"
+        android:layout_width="370dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/mask_card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/title03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Social Distance"/>
+
+        <TextView
+            android:id="@+id/subtitle03"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="42dp"
+            android:text="Maintain a safe distance from others (at least 1 metre)"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="265dp"
+            android:src="@drawable/distance_dude" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
