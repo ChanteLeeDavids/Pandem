@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="15dp"
-    tools:context=".Login.LoginScreen">
+    android:layout_margin="15dp"
+    tools:context=".RegisterScreen">
 
     <ImageView
         android:id="@+id/logoImage"
@@ -19,20 +19,21 @@
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello there, Welcome Back"
+        android:text="Welcome"
         android:transitionName="logo_txt"
         android:textSize="40sp"
         android:textStyle="bold"
         android:textColor="@color/black"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-condensed"
-        android:textAllCaps="true"/>
+        android:textAllCaps="true" />
 
     <TextView
-        android:id="@+id/signin_txt"
+        android:id="@+id/signup_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:text="Sign in to continue"
+        android:text="Sign up and check the latest stats with Pandem !"
         android:textColor="@color/black"
         android:fontFamily="sans-serif-condensed"
         android:transitionName="logo_desc"/>
@@ -40,31 +41,78 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="20dp"
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/username"
+            android:id="@+id/regName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:transitionName="name_trans"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/regUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
+            app:counterMaxLength="50"
             android:transitionName="username_trans"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/regEmail"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="Email"-->
+        <!--            android:transitionName="email_trans"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+        <!--            <com.google.android.material.textfield.TextInputEditText-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:inputType="textEmailAddress"/>-->
+
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/regPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone number"
+            android:transitionName="phone_trans"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/password"
+            android:id="@+id/regPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:transitionName="password_trans"
             app:passwordToggleEnabled="true"
+            android:transitionName="password_trans"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -75,36 +123,23 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/forgotpassBtn"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:background="#00000000"
-            android:text="Forgot Password?"
-            android:textColor="@color/black"
-            android:fontFamily="sans-serif-condensed"
-            android:textAllCaps="true"
-            android:layout_gravity="right"
-            android:elevation="0dp"
-            android:layout_margin="5dp"/>
-
-        <Button
-            android:id="@+id/loginBtn"
+            android:id="@+id/regUserBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LOGIN"
+            android:text="SIGN UP"
             android:textStyle="bold"
             android:background="@color/green_01"
             android:fontFamily="sans-serif-condensed"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:transitionName="button_trans"/>
+            android:layout_marginTop="8dp"
+            android:transitionName="button_trans"
+            android:layout_marginBottom="5dp" />
 
         <Button
-            android:id="@+id/signupBtn"
-            android:layout_width="200dp"
+            android:id="@+id/signinBtn"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:background="#00000000"
-            android:text="New user? sign up"
+            android:text="Already a user? sign in"
             android:textColor="@color/black"
             android:textAllCaps="true"
             android:layout_gravity="center"
@@ -114,6 +149,5 @@
             android:transitionName="login_signup_trans"/>
 
     </LinearLayout>
-
 
 </LinearLayout>

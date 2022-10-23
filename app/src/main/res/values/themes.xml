@@ -2,15 +2,17 @@
     <!-- Base application theme. -->
     <style name="Theme.Pandem" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/green_04</item>
-        <item name="colorPrimaryVariant">@color/green_04</item>
+        <item name="colorPrimary">@color/green_01</item>
+        <item name="colorPrimaryVariant">@color/green_01</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/green_04</item>
-        <item name="colorSecondaryVariant">@color/green_04</item>
+        <item name="colorSecondary">@color/green_01</item>
+        <item name="colorSecondaryVariant">@color/green_01</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="android:windowContentTransitions">true</item>
     </style>
 </resources>

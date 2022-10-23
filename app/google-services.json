@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "308528685077",
+    "project_id": "pandem-8e8ab",
+    "storage_bucket": "pandem-8e8ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308528685077:android:5e46fd3992948658aa6e1c",
+        "android_client_info": {
+          "package_name": "za.ac.cput.pandem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308528685077-00nejglprqu4o0aabh2qtpnv246b481k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbkq7PWvzcMKP-varZNEUTkr9FCScWriw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308528685077-00nejglprqu4o0aabh2qtpnv246b481k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -200,7 +200,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/sanatize_card"
-        android:layout_width="370dp"
+        android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_below="@id/safety_prec_txt"
         android:layout_centerHorizontal="true"
@@ -229,16 +229,17 @@
             android:textSize="17sp" />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="260dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/sanitizer_pump_bottle" />
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/mask_card"
-        android:layout_width="370dp"
+        android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_below="@id/sanatize_card"
         android:layout_centerHorizontal="true"
@@ -267,16 +268,17 @@
             android:textSize="17sp" />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_marginLeft="265dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/medical_mask" />
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/distance_card"
-        android:layout_width="370dp"
+        android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_below="@id/mask_card"
         android:layout_centerHorizontal="true"
@@ -305,8 +307,9 @@
             android:textSize="17sp" />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="265dp"
             android:src="@drawable/distance_dude" />
 
