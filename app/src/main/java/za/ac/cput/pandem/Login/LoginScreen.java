@@ -119,7 +119,7 @@ public class LoginScreen extends AppCompatActivity {
                                 }
 
                                 if(decPasstxt.equals(passwordtxt)){
-                                    Toast.makeText(LoginScreen.this, "Logging in", Toast.LENGTH_LONG).show();
+//                                    Toast.makeText(LoginScreen.this, "Logging in", Toast.LENGTH_LONG).show();
 
                                     startActivity(new Intent(LoginScreen.this, HomeScreen.class));
                                     finish();

@@ -74,18 +74,18 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
-            android:id="@+id/forgotpassBtn"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:background="#00000000"
-            android:text="Forgot Password?"
-            android:textColor="@color/black"
-            android:fontFamily="sans-serif-condensed"
-            android:textAllCaps="true"
-            android:layout_gravity="right"
-            android:elevation="0dp"
-            android:layout_margin="5dp"/>
+<!--        <Button-->
+<!--            android:id="@+id/forgotpassBtn"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="#00000000"-->
+<!--            android:text="Forgot Password?"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:fontFamily="sans-serif-condensed"-->
+<!--            android:textAllCaps="true"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:elevation="0dp"-->
+<!--            android:layout_margin="5dp"/>-->
 
         <Button
             android:id="@+id/loginBtn"
@@ -95,7 +95,7 @@
             android:textStyle="bold"
             android:background="@color/green_01"
             android:fontFamily="sans-serif-condensed"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="55dp"
             android:layout_marginBottom="5dp"
             android:transitionName="button_trans"/>
 
