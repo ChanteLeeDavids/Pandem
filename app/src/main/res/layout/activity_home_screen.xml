@@ -129,7 +129,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
-
+//
             <RelativeLayout
                 android:id="@+id/stats_icon_layout"
                 android:layout_width="60dp"
