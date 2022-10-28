@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Pandem</string>
+    <string name="bar_chart">Bar Chart</string>
+    <string name="pie_chart">Pie Chart</string>
+    <string name="radar_chart">Radar Chart</string>
 </resources>
