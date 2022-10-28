@@ -18,6 +18,7 @@ import za.ac.cput.pandem.R;
 public class HomeScreen extends AppCompatActivity {
 
     RelativeLayout mapBtn;
+    RelativeLayout statBtn;
 
     private static final String TAG = "HomeScreen";
     private static final int ERROR_DIALOG_REQUEST = 9001;
@@ -30,6 +31,9 @@ public class HomeScreen extends AppCompatActivity {
         if (isServicesOK()){
             init();
         }
+
+        setContentView(R.layout.activity_main_graph);
+        initStat();
     }
     private void init(){
         mapBtn = findViewById(R.id.map_icon_layout);
@@ -40,8 +44,19 @@ public class HomeScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
 
 
+    private void initStat()
+    {
+        statBtn = findViewById(R.id.stats_icon_layout);
+        statBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeScreen.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
     public boolean isServicesOK(){
         Log.d(TAG, "isServicesOK: checking google services version");
